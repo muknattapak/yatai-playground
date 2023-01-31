@@ -4,12 +4,10 @@
 - docker (docker-engine or docker-desktop)
 - docker-compose
 
-## Instructions
-- launch yatai deployment service
-  `docker-compose up`
-
 ## Usage
-- bundle iris-classifier
+1. launch yatai deployment service
+  `docker-compose up -d`
+1. bundle iris-classifier
   `docker-compose run iris-classifier-bundle`
-- Yatai web sonsole 
+1. Yatai web sonsole 
   http://localhost:3000/
