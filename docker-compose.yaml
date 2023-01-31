@@ -1,0 +1,19 @@
+version: '3'
+services:
+  yatai:
+    image: bentoml/yatai-service:0.13.1
+    ports:
+      - 3000:3000
+      - 50051:50051
+    volumes:
+      - ./bentoml:/root/bentoml
+
+  iris-classifier-bundle:
+    command: python3 main.py
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/workspace
+    profiles:
+      - utils
