@@ -7,7 +7,7 @@
 ## Usage
 1. Launch yatai deployment service
   `docker-compose up -d`
-1. Bundle iris-classifier
+2. Bundle iris-classifier
   `docker-compose run iris-classifier-bundle`
-1. Yatai web console 
+3. Yatai web console 
   http://localhost:3000/
