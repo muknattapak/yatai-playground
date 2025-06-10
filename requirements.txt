@@ -2,3 +2,5 @@ bentoml==0.13.1
 scikit-learn
 pandas
 protobuf<=3.20.1
+fastapi
+pydantic

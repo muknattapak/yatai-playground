@@ -3,7 +3,7 @@ services:
   yatai:
     image: bentoml/yatai-service:0.13.1
     ports:
-      - 3000:3000
+      - 4000:3000
       - 50051:50051
     volumes:
       - ./bentoml:/root/bentoml

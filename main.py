@@ -27,3 +27,5 @@ iris_classifier_service.pack("model", clf)
 
 # Save the prediction service to disk for model serving
 saved_path = iris_classifier_service.save()
+
+print(f"Service saved in path: {saved_path}")
